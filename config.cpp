@@ -34,6 +34,6 @@ class CfgFunctions
 
 class Extended_PostInit_EventHandlers {
 	class harr_dui_vitals {
-		init = "['ace_unconscious', harr_fnc_handleUncon] call CBA_fnc_addEventHandler; ['harr_alertMedic', harr_fnc_alertMedic] call CBA_fnc_addEventHandler; ['unit', harr_fnc_handleRespawn] call CBA_fnc_addPlayerEventHandler;";
+		init = "['ace_unconscious', harr_fnc_handleUncon] call CBA_fnc_addEventHandler; ['harr_alertMedic', harr_fnc_alertMedic] call CBA_fnc_addEventHandler; [player, 'respawn', harr_fnc_handleRespawn] call CBA_fnc_addBISEventHandler;";
 	};
 };

@@ -1,1 +1,1 @@
-playSound "harr_medic_alert";
+playSoundUI ["harr_medic_alert"];
